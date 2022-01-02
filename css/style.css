@@ -1,0 +1,20 @@
+/*!
+
+Main CSS File for the entire website (project-level file).
+
+Don't put individual html file level properties here.
+
+Contains CSS Properties for Header (NavBar) and Footer.
+
+Naming Conventions:
+===================
+- for ids, use underscore(_)
+- for classes, use hyphen(-)
+
+*/
+body {
+    padding-bottom: 20px;
+}
+
+#footer {
+}

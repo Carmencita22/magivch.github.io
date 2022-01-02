@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mountain Bike Club Stuttgart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap Main CSS File-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <!--Bootstrap Util CSS File-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.css">
+
+    <!--Project-level CSS file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- index.html page CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- Bootstrap JS File => TODO :: Check the dependency for this file and remove it(if not required)-->
+    <script src="js/bootstrap.js" type="application/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="content">
+    <!--Top Navigation Bar-->
+    <div id="navbar">
+        <!--If position-fixed class is used, need to add padding-top to <body> element-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #003A3E;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Mountain Bike Club Stuttgart</a>
+                <!--Toggler - Hamburger button/icon on the right for smaller screens-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseContent"
+                        aria-controls="navbarCollapseContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsable content when toggler icon is shown for smaller screens-->
+                <!-- Use justify-content-(start|center|end|around) for aligning the navbar items -->
+                <div class="collapse navbar-collapse justify-content-start" id="navbarCollapseContent">
+                    <!--mx-2 and mx-3 classes provide margins (left & right)-->
+                    <!--Set 'active' class for nav-item for each corresponding HTML page-->
+                    <ul class="navbar-nav mx-3">
+                        <li class="nav-item mx-2">
+                            <!--Use 'active' class and aria-current="page" for the current active navbar item-->
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="html/404.html">Courses</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="html/404.html">Membership</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="html/404.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="html/404.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Main Page Content here-->
+    <div id="main_content">
+
+        <!--Top Intro Video-->
+        <div id="main_intro">
+
+            <div id="main_intro_video">
+                 <!--Video Source-->
+                <!--Compressed Video without losing quality using ffmpeg linux tool-->
+                <video src="videos/intro_video.mp4" autoplay muted loop width="100%" height="auto"></video>
+
+                <!--Overlay Text on the Video-->
+                <div id="intro_video_overlay">
+                    <p class="h1">We drive by heart!</p>
+                    <p class="fs-6">The best mountain bike coaches in Stuttgart</p>
+                    <a href="html/404.html"><button class="fs-5">Find a course</button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="news_content">
+
+            <!--News Header Bar-->
+            <div class="content-header-bar">
+                <p class="h3">News</p>
+            </div>
+
+            <div id="news_items" class="marketing">
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" />
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2>Heading</h2>
+                        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                        <p><a class="btn btn-secondary" href="#">Read more &raquo;</a></p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" />
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2>Heading</h2>
+                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                        <p><a class="btn btn-secondary" href="#">Read more &raquo;</a></p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                                                                                 dy=".3em">140x140</text>
+                        </svg>
+
+                        <h2>Heading</h2>
+                        <p>And lastly this, the third column of representative placeholder content.</p>
+                        <p><a class="btn btn-secondary" href="#">Read more &raquo;</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-2">
+                    <h5>Mountain Bike Club Stuttgart</h5>
+                    <ul class="nav flex-column">
+                        <p>Königstraße 26<br>
+                            70173 Stuttgart
+                        </p>
+
+                    </ul>
+                </div>
+
+                <!-- Icons not visible. How to make equal spacing between the columns? How to make the background/font in color for the whole screen size?  -->
+                <div class="col-2">
+                    <h5>Social Media</h5>
+                    <ul class="nav flex-column">
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="col-4 offset-1">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of whats new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2022 Mountain Bike Club Stuttgart. All rights reserved.</p>
+
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+</body>
+
+
+
+</html>
