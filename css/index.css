@@ -9,6 +9,10 @@ Naming Conventions:
 
 */
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 #main_content {
 
 }
