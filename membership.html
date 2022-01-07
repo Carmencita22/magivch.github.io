@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Mountain Bike Club Stuttgart</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta charset="UTF-8">
+    <title>Membership - Mountain Bike Club Stuttgart</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Bootstrap Main CSS File-->
@@ -15,8 +14,8 @@
     <!--Project-level CSS file (Common)-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- index.html page CSS file -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- membership.html page CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/membership.css">
 
     <!-- Bootstrap JS File => TODO :: Check the dependency for this file and remove it(if not required)-->
     <script src="js/bootstrap.js" type="application/javascript"></script>
@@ -42,17 +41,17 @@
                 <!-- Use justify-content-(start|center|end|around) for aligning the navbar items -->
                 <div class="collapse navbar-collapse justify-content-start" id="navbarCollapseContent">
                     <!--mx-2 and mx-3 classes provide margins (left & right)-->
-                    <!--Set 'active' class for nav-item for each corresponding HTML page-->
+                    <!-- Search Input Field for NavBar on the right-->
                     <ul class="navbar-nav me-auto mx-3">
                         <li class="nav-item mx-2">
-                            <!--Use 'active' class and aria-current="page" for the current active navbar item-->
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="courses.html">Courses</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="membership.html">Membership</a>
+                            <!--Use 'active' class and aria-current="page" for the current active navbar item-->
+                            <a class="nav-link active" aria-current="page" href="#">Membership</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="blog.html">Blog</a>
@@ -62,11 +61,12 @@
                         </li>
                     </ul>
 
-                    <!-- Search Input Field for NavBar on the right-->
+                    <!--Set 'active' class for nav-item for each corresponding HTML page-->
                     <form class="d-inline-flex ms-3 me-2 w-auto">
                         <input class="form-control form-control-sm me-2" type="search" placeholder="Start typing here..." maxlength="20" aria-label="Search">
                         <button class="btn btn-sm btn-primary" type="submit">Search</button>
                     </form>
+
                 </div>
             </div>
         </nav>
@@ -75,107 +75,7 @@
     <!--Main Page Content here-->
     <div id="main_content">
 
-        <!--Top Intro Video-->
-        <div id="main_intro">
-
-            <div id="main_intro_video">
-                 <!--Video Source-->
-                <!--Compressed Video without losing quality using ffmpeg linux tool-->
-                <video src="videos/intro_video.mp4" autoplay muted loop width="100%" height="auto"></video>
-
-                <!--Overlay Text on the Video-->
-                <div id="intro_video_overlay">
-                    <p class="h1">We drive by heart!</p>
-                    <p class="fs-5">The best mountain bike coaches in Stuttgart</p>
-                    <a href="html/404.html"><button class="fs-4 px-3 py-2">Find a course</button></a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div id="news_content">
-
-            <!--News Header Bar-->
-            <div class="container content-header-bar">
-                <p class="h3">News</p>
-            </div>
-
-            <div id="news_items" class="container marketing mt-4">
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" />
-                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                        <p><a class="btn btn-secondary" href="#">Read more &raquo;</a></p>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" />
-                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                        <p><a class="btn btn-secondary" href="#">Read more &raquo;</a></p>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" />
-                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>And lastly this, the third column of representative placeholder content.</p>
-                        <p><a class="btn btn-secondary" href="#">Read more &raquo;</a></p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div id="image_slideshow" class="mb-4">
-
-            <div id="carouselLayout" class="container carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/gallery_placeholder_1080p.png" class="d-block w-100" alt="Gallery Image 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/gallery_placeholder_1080p.png" class="d-block w-100" alt="Gallery Image 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/gallery_placeholder_1080p.png" class="d-block w-100" alt="Gallery Image 3">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselLayout" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselLayout" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </div>
+        <h2 align="center">Main Content for Membership comes here...</h2>
 
     </div>
 
@@ -236,5 +136,4 @@
 </div>
 
 </body>
-
 </html>
