@@ -13,6 +13,19 @@ Naming Conventions:
 
 */
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 #footer {
     background-color: #003A3E;
+}
+
+#datenschutz_btn:hover {
+    cursor: pointer;
+}
+
+#imprint_btn:hover {
+    cursor: pointer;
 }
